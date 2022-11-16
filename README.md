@@ -1,4 +1,4 @@
-# SPADE4
+# ♠️ SPADE4: Sparsity and Delay Embedding based Forecasting of Epidemics
 Implementation of Sparsity and Delay Embedding based Forecasting of Epidemics (SPADE4)
 
 ## Problem Statement
