@@ -12,6 +12,6 @@ SPADE4 uses random features with delay embedding to forecast epidemic over short
     
 where $p$ is the embedding dimension. We wish to learn the function $f:\mathbb{R}^p\rightarrow\mathbb{R}$ of the form
 
-$f(\mathbf{h}$ $_k$ $) \approx \sum\limits_{j=1}^N c_j \phi(\langle \mathbf{h},\boldsymbol{\omega}_j\rangle)$,
+$f(\mathbf{h}$ $_{k}$ $) \approx \sum\limits_{j=1}^N c_j \phi(\langle \mathbf{h},\boldsymbol{\omega}_j\rangle)$,
 
  where $\mathbf{h}, \boldsymbol{\omega}_j\in\mathbb{R}^{p}$, $\boldsymbol{\omega}_j$ are the random weights, $\phi$ is a nonlinear activation function and $\mathbf{c} =[c_1,... c_N]\in\mathbb{R}^N$ is the trainable coefficient vector
