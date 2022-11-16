@@ -7,8 +7,11 @@ Given data { $y(t_k)$ } $_{k=1}^m$ corresponding to the solution of a multidimen
 ## Method
 
 SPADE4 uses random features with delay embedding to forecast epidemic over short term windows. Motivated by Takens' theorem, we assume that the rate of change in the observable $y(t)$ is a function of its time delayed mapping $\Phi$, i.e.,
-    \dot{y}(t_k) = f(y(t_k), y(t_{k-1}),...,y(t_{k-(p-1)})),
+
+    $\dot{y}(t_k) = f(y(t_k), y(t_{k-1}),...,y(t_{k-(p-1)}))$,
+    
 where $p$ is the embedding dimension. We wish to learn the function $f:\mathbb{R}^p\rightarrow\mathbb{R}$ of the form
 
-f(\mathbf{h}) \approx \sum\limits_{j=1}^N c_j \phi(\langle \mathbf{h},\boldsymbol{\omega}_j\rangle),
+$f(\mathbf{h}) \approx \sum\limits_{j=1}^N c_j \phi(\langle \mathbf{h},\boldsymbol{\omega}_j\rangle)$,
+
  where $\mathbf{h},\,\boldsymbol{\omega}_j\in\mathbb{R}^{p}$, $\boldsymbol{\omega}_j$ are the random weights, $\phi$ is a nonlinear activation function and $\c =\begin{bmatrix}c_1\ldots c_N\end{bmatrix}^T\in\R^N$ is the trainable coefficient vector
