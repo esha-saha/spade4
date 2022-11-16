@@ -8,7 +8,7 @@ Given data { $y(t_k)$ } $_{k=1}^m$ corresponding to the solution of a multidimen
 
 SPADE4 uses random features with delay embedding to forecast epidemic over short term windows. Motivated by Takens' theorem, we assume that the rate of change in the observable $y(t)$ is a function of its time delayed mapping i.e.,
 
-    $y(t_k)$ = f(y(t_k), y(t_{k-1}),...,y(t_{k-(p-1)})) = f(\mathbf{h_k})$,
+    $y'($t_k$) = f(y(t_k), y(t_{k-1}),...,y(t_{k-(p-1)})) = f(\mathbf{h_k})$,
     
 where $p$ is the embedding dimension. We wish to learn the function $f:\mathbb{R}^p\rightarrow\mathbb{R}$ of the form
 
